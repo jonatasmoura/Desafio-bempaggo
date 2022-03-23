@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacote de Adesivos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1>Pacote de Adesivos</h1>
+
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome:</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+                <label for="mansagem">Observações:</label>
+                <textarea cols="70" rows="8" id="mensagem" class="input-padrao" required placeholder="Alguma dúvida? Recado?"></textarea>
+                
+                
+                <label>Quais Adesivos:</label>
+                <label for="react"><input type="checkbox" value="email" id="react">React</label>
+                <label for="vue"><input type="checkbox" value="telefone" id="vue">Vue</label>
+                <label for="angula"><input type="checkbox" value="whatsapp" id="angula">Angula</label>
+                <label>Quantos adesivos de cada?</label>
+                
+                <div class="counter">
+                    <button type="button" id="menos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+                      <path d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z" /></svg>
+                    </button>
+                    <input type="number" name="numero" id="num" placeholder="0" required />
+                    <button type="button" id="mais">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+                      <path d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z" /></svg>
+                    </button>
+                </div>
+                <input type="submit" value="Enviar" class="enviar">
+                   
+            </form>
+               
+                    
+
+        </main>
+
+        <footer>
+            
+            <p class="copyright">Copyright &copy;2022 BemPaggo.</p>
+            
+        </footer>
+    </body>
+</html>
